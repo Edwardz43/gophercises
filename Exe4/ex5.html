@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en" class="no-ie">
+
+
+<head>
+    <title>Gophercises - Coding exercises for budding gophers</title>
+
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description"
+        content="This FREE course will help you exercise your Go skills while building some cool apps, tools, and packages.">
+    <meta name="keywords" content="golang go gophercises coding exercises gopher">
+    <meta name="author" content="Jon Calhoun">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/manifest.json">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#673c4f">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+    <meta name="msapplication-config" content="/icons/browserconfig.xml">
+    <meta name="theme-color" content="#673C4F">
+
+
+    <meta content="https://gophercises.com/img/social_share.png" property="og:image">
+    <meta content="Gophercises" property="og:title">
+    <meta content="website" property="og:type">
+    <meta content="https://gophercises.com" property="og:url">
+    <meta content="Gophercises" property="og:site_name">
+    <meta content="Coding exercises for budding gophers" property="og:description">
+
+
+    <meta name="twitter:card" content="photo">
+    <meta name="twitter:site" content="@joncalhoun">
+    <meta name="twitter:creator" content="@joncalhoun">
+    <meta name="twitter:title" content="Gophercises">
+    <meta name="twitter:description" content="Coding exercises for budding gophers">
+    <meta name="twitter:image" content="https://gophercises.com/img/social_share.png">
+    <meta name="twitter:url" content="https://gophercises.com">
+
+
+    <meta name="application-name" content="Gophercises - Coding exercises for budding gophers">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="https://gophercises.com/img/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="https://gophercises.com/img/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="https://gophercises.com/img/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="https://gophercises.com/img/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="https://gophercises.com/img/mstile-310x310.png">
+
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57"
+        href="https://gophercises.com/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+        href="https://gophercises.com/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72"
+        href="https://gophercises.com/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="https://gophercises.com/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60"
+        href="https://gophercises.com/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+        href="https://gophercises.com/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76"
+        href="https://gophercises.com/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+        href="https://gophercises.com/img/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://gophercises.com/img/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="https://gophercises.com/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://gophercises.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://gophercises.com/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://gophercises.com/img/favicon-128.png" sizes="128x128">
+
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/app-052918.css">
+</head>
+
+<body class="members">
+
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle Navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/exercises/" class="navbar-brand">
+                    <span class="brand-logo"><img src="https://gophercises.com/img/gophercises_logo.png"></span>
+
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" action="/logout" method="POST">
+                    <button type="submit" class="btn btn-primary">Logout</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="exercises-section">
+        <div class="row main-content">
+            <div class="col-lg-12">
+
+                <div class="panel widget">
+                    <div class="panel-body bg-default">
+                        <div class="row row-table row-flush">
+                            <div class="col-xs-12">
+                                <p class="mb0">Exercise 4</p>
+                                <h4 class="m0">HTML Link Parser</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body video-panel">
+                        <div class="row">
+                            <div class="col-lg-10 col-md-9">
+
+                                <div class="tab-content">
+
+                                    <div role="tabpanel" class="tab-pane active" id="242406229">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242406229" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242406666">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242406666" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242409777">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242409777" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242405799">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242405799" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242407776">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242407776" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242407631">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242407631" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242407321">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242407321" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                    <div role="tabpanel" class="tab-pane " id="242406983">
+                                        <div class="embed-container">
+                                            <iframe src="https://player.vimeo.com/video/242406983" frameborder="0"
+                                                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-3">
+
+                                <h3>Videos</h3>
+                                <ul class="nav nav nav-pills nav-stacked" role="tablist">
+
+                                    <li role="presentation" class="active">
+                                        <a href="#242406229" aria-controls="242406229" role="tab" data-toggle="tab">
+                                            Overview
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242406666" aria-controls="242406666" role="tab" data-toggle="tab">
+                                            HTML Docs are Trees
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242409777" aria-controls="242409777" role="tab" data-toggle="tab">
+                                            Defining the API
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242405799" aria-controls="242405799" role="tab" data-toggle="tab">
+                                            DFSing the HTML
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242407776" aria-controls="242407776" role="tab" data-toggle="tab">
+                                            Finding Link Nodes
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242407631" aria-controls="242407631" role="tab" data-toggle="tab">
+                                            Building Link Structs
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242407321" aria-controls="242407321" role="tab" data-toggle="tab">
+                                            Extracting Node Text
+                                        </a>
+                                    </li>
+
+                                    <li role="presentation" class="">
+                                        <a href="#242406983" aria-controls="242406983" role="tab" data-toggle="tab">
+                                            Parsing the Examples
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <br />
+                                <h3>Resources</h3>
+                                <ul class="nav nav nav-pills nav-stacked">
+                                    <li class="">
+                                        <a href="https://www.github.com/gophercises/link">
+                                            Github Repo
+                                        </a>
+                                    </li>
+
+
+                                    <li class="">
+                                        <a href="https://github.com/gophercises/link/tree/solution">
+                                            Solution Source Code
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body bg-default">
+                        <small>
+                            <mark>Seeing an error about the video content being restricted in your area?</mark> A plugin
+                            like Privacy Badger is likely causing an issue w/ Vimeo (my video host). Try disabling the
+                            plugin to see if it fixes the issue.
+                        </small>
+                    </div>
+
+                    <br />
+                    <div class="panel-body bg-default lesson-description">
+                        <div class="row row-table row-flush">
+                            <div class="col-xs-12">
+                                <h3>Exercise details</h3>
+                                <hr />
+
+                                <p>In this exercise your goal is create a package that makes it easy to parse an HTML
+                                    file and extract all of the links
+                                    (<code>&lt;a href=&#34;&#34;&gt;...&lt;/a&gt;</code> tags). For each extracted link
+                                    you should return a data structure that includes both the <code>href</code>, as well
+                                    as the text inside the link. Any HTML inside of the link can be stripped out, along
+                                    with any extra whitespace including newlines, back-to-back spaces, etc.</p>
+
+                                <p>Links will be nested in different HTML elements, and it is very possible that you
+                                    will have to deal with HTML similar to code below.</p>
+
+                                <pre><code>&lt;a href=&#34;/dog&#34;&gt;
+  &lt;span&gt;Something in a span&lt;/span&gt;
+  Text not in a span
+  &lt;b&gt;Bold text!&lt;/b&gt;
+&lt;/a&gt;
+</code></pre>
+
+                                <p>In situations like these we want to get output that looks roughly like:</p>
+
+                                <pre><code>Link{
+  Href: &#34;/dog&#34;,
+  Text: &#34;Something in a span Text not in a span Bold text!&#34;,
+}
+</code></pre>
+
+                                <p>Once you have a working program, try to write some tests for it to practice using the
+                                    testing package in go.</p>
+
+                                <h4>Notes</h4>
+
+                                <p><strong>1. Use the x/net/html package</strong></p>
+
+                                <p>I recommend checking out the <a href="https://godoc.org/golang.org/x/net/html"
+                                        rel="nofollow">x/net/html</a> package for this task, which you will need to
+                                    <code>go get</code>. It is provided by the Go team, but isn’t included in the
+                                    standard library. This makes it a little easier to parse HTML files.</p>
+
+                                <p><strong>2. Ignore nested links</strong></p>
+
+                                <p>You can ignore any links nested inside of another link. Eg with following HTML:</p>
+
+                                <pre><code>&lt;a href=&#34;#&#34;&gt;
+  Something here &lt;a href=&#34;/dog&#34;&gt;nested dog link&lt;/a&gt;
+&lt;/a&gt;
+</code></pre>
+
+                                <p>It is okay if your code returns only the outside link.</p>
+
+                                <p><strong>3. Get something working before focusing on edge-cases</strong></p>
+
+                                <p>Don’t worry about having perfect code. Chances are there will be a lot of edge cases
+                                    here that will be kinda tricky to handle. Just try to cover the most basic use cases
+                                    first and then improve on that.</p>
+
+                                <p><strong>4. A few HTML examples have been provided</strong></p>
+
+                                <p>I created a few simpler HTML files and included them in this repo to help with
+                                    testing. They won’t cover all potential use cases, but should help you start testing
+                                    out your code.</p>
+
+                                <p><strong>5. The fourth example will help you remove comments from your link
+                                        text</strong></p>
+
+                                <p>Chances are your first version will include the text from comments inside a link tag.
+                                    Mine did. Use <a href="ex4.html" rel="nofollow">ex4.html</a> to test that case out
+                                    and fix the bug.</p>
+
+                                <p><em>Hint: See <a href="https://godoc.org/golang.org/x/net/html#NodeType"
+                                            rel="nofollow">NodeType</a> constants and look for the types that you can
+                                        ignore.</em></p>
+
+                                <h3>External Resources</h3>
+
+                                <p>In the solution for this exercise I end up using a DFS, which is a graph theory
+                                    algorithm. If you want to learn a little more about that, I have discussed it on
+                                    YouTube here - <a href="https://www.youtube.com/watch?v=zboCGDMnU3I"
+                                        rel="nofollow">https://www.youtube.com/watch?v=zboCGDMnU3I</a></p>
+
+                                <p>There is a complete series on algorithms and graph theory, though at this time it is
+                                    somewhat incomplete. I never have enough time in the day 🙁. Hopefully one day
+                                    <em>Let’s Learn Algorithms</em> will be its own series like <em>Gophercises</em>.
+                                </p>
+
+                                <h4>Bonus</h4>
+
+                                <p>The only bonuses here are to improve your tests and edge-case coverage.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body bg-default">
+                        <div class="row row-table row-flush">
+                            <div class="col-xs-12">
+                                <h4 class="m0">Relevant links</h4>
+                                <hr />
+                                <ul class="">
+
+
+                                    <li><a href="https://www.github.com/gophercises/link">Github repo with exercise
+                                            details</a></li>
+
+                                    <li><a href="https://github.com/gophercises/link/tree/solution">Solution Source
+                                            Code</a></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer-section">
+        <div class="row">
+            <br>
+            <div class="col-md-10 col-md-offset-1">
+                <center>
+                    <p class="disclaimer">Gophercises was created by <a
+                            href="https://twitter.com/joncalhoun">@joncalhoun</a>. Artwork by Marcus Olsson (<a
+                            href="https://twitter.com/marcusolsson">@marcusolsson</a>), animated by Jon Calhoun, and
+                        inspired by the original Go Gopher created by Renee French.</p>
+                </center>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

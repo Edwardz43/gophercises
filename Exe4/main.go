@@ -4,7 +4,6 @@ import (
 	"bufio"
 	"fmt"
 	"log"
-	"os"
 	"strings"
 
 	"golang.org/x/net/html"
@@ -25,11 +24,11 @@ type Link struct {
 var f func(*html.Node)
 
 func main() {
-	file, err := os.Open("ex3.html")
-	defer file.Close()
-	check(err)
+	// reader := fileReaderGetter{path: "ex4.html"}
 
-	n, err := html.Parse(bufio.NewReader(file))
+	reader := urlReaderGetter{path: "https://yami.io/golang-interface/"}
+
+	n, err := html.Parse(bufio.NewReader(reader.get()))
 	check(err)
 
 	f = func(n *html.Node) {
@@ -54,7 +53,3 @@ func main() {
 	}
 	f(n)
 }
-
-// func preProcess(s string) string {
-
-// }
